@@ -1,0 +1,42 @@
+@import '../../../style/mixins.scss';
+@import '../../../style/variables.scss';
+.sideBarContainer{
+    @include FlexCol;
+    width:5rem;
+    justify-content: space-between;
+    padding: 20px;
+    height: 96vh;
+
+    .fields{
+        @include FlexCol;
+        justify-content: center
+    }
+
+    .logout{
+        @include FlexRow;
+        justify-content: space-between;
+        gap:10px;
+    }
+
+    .logout:active{
+        transform: scale(0.97);
+    }
+    .itemName{
+        margin: 2px;
+    }
+
+    .activeCat{
+        padding: 10px;
+        margin:10px;
+        background-color: #d3cde9;
+        border-radius: 10px;
+
+        
+    }
+
+    .inActiveCat{
+        padding: 10px;
+        margin:10px;
+    }
+
+}

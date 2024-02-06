@@ -1,0 +1,47 @@
+@import '../../../../style/mixins.scss';
+@import '../../../../style/variables.scss';
+.messageContainer{
+    @include FlexRow;
+    padding: 10px;
+    border-bottom: solid rgb(219, 217, 226);
+    margin:10px;
+    width:20rem;
+    justify-content: space-between;
+
+    .profileAndName
+    {
+        @include FlexRow;
+        gap:10px;
+    }
+    .name{
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 4px;
+        font-family: $Font2;
+    }
+    .message{
+        margin: 0px;
+        font-weight: 300;
+        font-size: small;
+        font-family: $Font2;
+    }
+    .time{
+        font-weight: 200;
+        font-size: small;
+    }
+
+    
+}
+.ActiveCont{
+    background-color: #dcd4ff;
+
+}
+
+.messageContainer:hover{
+    background-color: #dad9df;
+    
+}
+
+.messageContainer:active{
+    transform: scale(0.97);
+}

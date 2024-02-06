@@ -1,0 +1,64 @@
+@import '../../style/mixins.scss';
+@import '../../style/variables.scss';
+
+.container {
+  @include FlexRow;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+
+  .component {
+    animation: slideLeft 2s ease-in-out;
+  }
+
+  .img {
+    height: 50rem;
+    animation: slideRight 2s ease-in-out;
+  }
+
+  @media screen and (max-width: $large-screen) { 
+    margin-top: 10%;
+
+    .img {
+      // animation: none; 
+      height: 28rem;
+    }
+  }
+  
+  @media screen and (max-width: $medium-screen) {
+    flex-direction: column-reverse; 
+    margin-top: 3rem;
+
+    .img {
+      animation: none; 
+      height: 10rem;
+    }
+  }
+
+  @media screen and (max-width: $small-screen) {
+    .img {
+      height: 10rem; 
+    }
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

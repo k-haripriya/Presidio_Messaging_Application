@@ -1,0 +1,52 @@
+@import '../../style/variables.scss';
+@import '../../style/mixins.scss';
+
+.signup-box{
+    padding:5rem;
+    margin:5rem;
+    border: solid whitesmoke;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+   
+    @include FlexCol;
+
+    .header{
+       @include FlexRow; 
+       gap: 1rem;
+    }
+
+    h1{
+        font-family: $Font1;
+    }
+
+    .box{
+        @include FlexCol;
+        justify-content: center;
+        
+    }
+
+    .slogan{
+        color: #ed7c83;
+    }
+
+    .option{
+        cursor: pointer;
+        
+    }
+    .option:active{
+        transform: scale(0.99);
+        opacity: 0.7;
+    }
+    @media screen and (max-width: $large-screen) {
+        padding: 2rem;
+        margin: 1rem;
+        h1{
+            font-size: 1.2rem;
+        }
+        .slogan{
+            font-size: 0.8rem;
+        }
+        h3,.option{
+            font-size: 0.7rem;
+        }
+      }
+}

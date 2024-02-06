@@ -1,0 +1,22 @@
+@import '../../../style/variables.scss';
+.input{
+    height: 2rem;
+    width: 20rem;
+    border-color: $TextInputBorder;
+    margin:1rem;
+    outline: none;
+    
+    @media screen and (max-width: $large-screen) { 
+        height: 1rem;
+        width: 10rem;
+        margin: 0.5rem;
+        font-size: 0.8rem;
+      }
+    
+}
+.input:focus{
+    outline: auto;
+    outline-color: black 0.5;
+    // outline-style:double;
+    transform: scale(1.03);
+}

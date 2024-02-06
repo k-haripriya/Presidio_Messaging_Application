@@ -1,0 +1,12 @@
+.searchBar{
+    width:20rem;
+    background-color: #d3cde9;
+    padding:1rem;
+    border: none;
+    border-radius: 10px; 
+}
+
+.searchBar:focus{
+    outline-color: rgb(127, 82, 190);
+
+}

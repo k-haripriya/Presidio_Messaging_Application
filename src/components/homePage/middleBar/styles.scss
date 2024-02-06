@@ -1,0 +1,33 @@
+@import '../../../style/variables.scss';
+@import '../../../style/mixins.scss';
+.middleBarContainer{
+    height:96vh;
+    padding:20px;
+    width: 25rem;
+    background-color: 	#f5f7fb;
+    @include FlexCol;
+     h3{
+        text-align: center;
+        font-family: $Font1;
+     }
+
+     .scrollContainer
+     {
+        overflow: scroll;
+        
+     }
+     .newChannel{
+      padding:10px;
+      border: solid #d3cde9;
+      ;
+      margin: 10px;
+      border-radius: 10px;
+      p{
+         margin:0px
+      };
+     }
+
+}
+::-webkit-scrollbar{
+    display: none;
+}

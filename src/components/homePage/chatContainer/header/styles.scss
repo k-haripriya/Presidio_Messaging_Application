@@ -1,0 +1,19 @@
+@import '../../../../style/mixins.scss';
+
+.headerContainer{
+    padding: 10px;
+    box-shadow: 0px 4px 4px -2px rgba(199, 197, 197, 0.5);
+    @include FlexRow;
+    justify-content: space-between;
+
+    .nameAndProfile{
+        @include FlexRow;
+        gap:10px
+    }
+
+    .icons{
+        @include FlexRow;
+        gap:10px;
+    }
+
+}
